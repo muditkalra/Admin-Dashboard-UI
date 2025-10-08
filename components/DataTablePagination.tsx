@@ -5,8 +5,8 @@ import {
     ChevronsLeft,
     ChevronsRight,
 } from "lucide-react"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select"
 import { Button } from "./ui/button"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select"
 
 interface DataTablePaginationProps<TData> {
     table: Table<TData>

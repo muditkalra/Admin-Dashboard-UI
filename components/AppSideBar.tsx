@@ -1,10 +1,8 @@
-import { Home, LucideIcon, Inbox, Calendar, Search, Settings, User2, ChevronUp, Plus, Projector, ChevronDown, User, DollarSign, Globe2 } from 'lucide-react';
-import React from 'react'
-import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupAction, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuBadge, SidebarMenuButton, SidebarMenuItem, SidebarMenuSkeleton, SidebarMenuSub, SidebarSeparator } from './ui/sidebar';
+import { Calendar, ChevronDown, ChevronUp, DollarSign, Globe2, Home, Inbox, LucideIcon, Plus, Projector, User, User2 } from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from './ui/collapsible';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu';
+import { Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupAction, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuBadge, SidebarMenuButton, SidebarMenuItem, SidebarMenuSub, SidebarSeparator } from './ui/sidebar';
 
 interface item {
 	title: string;

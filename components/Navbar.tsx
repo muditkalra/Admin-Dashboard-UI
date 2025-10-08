@@ -1,10 +1,8 @@
-import { LogOut, Moon, Settings, Sun, User } from 'lucide-react'
-import Link from 'next/link'
-import React from 'react'
-import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger, } from "@/components/ui/dropdown-menu"
-import { Button } from './ui/button'
+import { LogOut, Settings, User } from 'lucide-react'
+import Link from 'next/link'
 import ThemeToggle from './ThemeToggle'
+import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
 import { SidebarTrigger } from './ui/sidebar'
 
 
