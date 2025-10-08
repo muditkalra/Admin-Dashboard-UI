@@ -1,0 +1,6 @@
+[?9001h[?1004h[?25l[2J[m[2;1H> admin@0.1.0 dev C:\Users\hp\Desktop\project-mern\microservices-ecommerce\apps\admin
+> next dev --turbopack[5;1H]0;C:\WINDOWS\system32\cmd.exe[?25h]0;next-server (v15.5.4) [33m[1m⚠[m Port 3000 is in use by an unknown process, using available port 3001 instead.
+   [38;2;173;127;168m[1m▲ Next.js 15.5.4[m (Turbopack)
+[?25l   - Local:        http://localhost:3001
+   - Network:      http://192.168.29.206:3001[10;1H [32m[1m✓[m Starting...
+[?25h [32m[1m✓[m Ready in 5.9s
