@@ -36,7 +36,7 @@ export default function EditUser() {
             <SheetHeader>
                 <SheetTitle className='mb-4'>Edit User</SheetTitle>
                 <SheetDescription asChild>
-                    <ScrollArea className='max-h-[450px]'>
+                    <ScrollArea className='max-h-[450px] xl:max-h-full'>
                         <Form {...form}>
                             <form action="" className='space-y-8'>
                                 <FormField control={form.control} name='username' render={({ field }) => (

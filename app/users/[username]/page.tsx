@@ -118,16 +118,16 @@ export default function SingleUserPage() {
                                 <span className='font-bold'>Username:</span><span> Donald Trump</span>
                             </div>
                             <div className="flex gap-2 items-center">
-                                <span className='font-bold'>Email</span><span> donaldtrump@presidentofusa.com</span>
+                                <span className='font-bold'>Email:</span><span> donaldtrump@presidentofusa.com</span>
                             </div>
                             <div className="flex gap-2 items-center">
                                 <span className='font-bold'>Phone:</span><span> +1 999 999 0999</span>
                             </div>
                             <div className="flex gap-2 items-center">
-                                <span className='font-bold'>Location</span><span> White house</span>
+                                <span className='font-bold'>Location:</span><span> White house</span>
                             </div>
                             <div className="flex gap-2 items-center">
-                                <span className='font-bold'>Role</span><span>
+                                <span className='font-bold'>Role:</span><span>
                                     <Badge className='bg-gradient-to-br from-blue-600 via-slate-100 to-red-600 py-2 px-4'>
                                         President
                                     </Badge>
