@@ -7,6 +7,7 @@ import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, For
 import { Input } from './ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { SheetContent, SheetDescription, SheetHeader, SheetTitle } from './ui/sheet';
+import { ScrollArea } from "./ui/scroll-area";
 
 
 const formSchema = z.object({
@@ -35,77 +36,79 @@ export default function EditUser() {
             <SheetHeader>
                 <SheetTitle className='mb-4'>Edit User</SheetTitle>
                 <SheetDescription asChild>
-                    <Form {...form}>
-                        <form action="" className='space-y-8'>
-                            <FormField control={form.control} name='username' render={({ field }) => (
-                                <FormItem>
-                                    <FormLabel>Username</FormLabel>
-                                    <FormControl>
-                                        <Input {...field} />
-                                    </FormControl>
-                                    <FormDescription>
-                                        This is your public display username.
-                                    </FormDescription>
-                                    <FormMessage />
-                                </FormItem>)} />
-                            <FormField control={form.control} name='email' render={({ field }) => (
-                                <FormItem>
-                                    <FormLabel>Email</FormLabel>
-                                    <FormControl>
-                                        <Input {...field} />
-                                    </FormControl>
-                                    <FormDescription>
-                                        This is your public display email
-                                    </FormDescription>
-                                    <FormMessage />
-                                </FormItem>)} />
-                            <FormField control={form.control} name='phone' render={({ field }) => (
-                                <FormItem>
-                                    <FormLabel>Phone Number</FormLabel>
-                                    <FormControl>
-                                        <Input {...field} />
-                                    </FormControl>
-                                    <FormDescription>
-                                        This is your public display phone number.
-                                    </FormDescription>
-                                    <FormMessage />
-                                </FormItem>)} />
-                            <FormField control={form.control} name='location' render={({ field }) => (
-                                <FormItem>
-                                    <FormLabel>Location</FormLabel>
-                                    <FormControl>
-                                        <Input {...field} />
-                                    </FormControl>
-                                    <FormDescription>
-                                        This is your public display location.
-                                    </FormDescription>
-                                    <FormMessage />
-                                </FormItem>)} />
-                            <FormField control={form.control} name='roles' render={() => (
-                                <FormItem>
-                                    <FormLabel>Role</FormLabel>
-                                    <FormControl>
-                                        <Select>
-                                            <SelectTrigger className='w-[150px]'>
-                                                <SelectValue placeholder="Role" />
-                                            </SelectTrigger>
-                                            <SelectContent>
-                                                <SelectItem value="president">President</SelectItem>
-                                                <SelectItem value="admin">Admin</SelectItem>
-                                                <SelectItem value="user">User</SelectItem>
-                                            </SelectContent>
-                                        </Select>
-                                    </FormControl>
-                                    <FormDescription>
-                                        Only Verified user can be admin
-                                    </FormDescription>
-                                    <FormMessage />
-                                </FormItem>)} />
-                            <Button>
-                                Submit
-                            </Button>
-                        </form>
-                    </Form>
+                    <ScrollArea className='max-h-[450px]'>
+                        <Form {...form}>
+                            <form action="" className='space-y-8'>
+                                <FormField control={form.control} name='username' render={({ field }) => (
+                                    <FormItem>
+                                        <FormLabel>Username</FormLabel>
+                                        <FormControl>
+                                            <Input {...field} />
+                                        </FormControl>
+                                        <FormDescription>
+                                            This is your public display username.
+                                        </FormDescription>
+                                        <FormMessage />
+                                    </FormItem>)} />
+                                <FormField control={form.control} name='email' render={({ field }) => (
+                                    <FormItem>
+                                        <FormLabel>Email</FormLabel>
+                                        <FormControl>
+                                            <Input {...field} />
+                                        </FormControl>
+                                        <FormDescription>
+                                            This is your public display email
+                                        </FormDescription>
+                                        <FormMessage />
+                                    </FormItem>)} />
+                                <FormField control={form.control} name='phone' render={({ field }) => (
+                                    <FormItem>
+                                        <FormLabel>Phone Number</FormLabel>
+                                        <FormControl>
+                                            <Input {...field} />
+                                        </FormControl>
+                                        <FormDescription>
+                                            This is your public display phone number.
+                                        </FormDescription>
+                                        <FormMessage />
+                                    </FormItem>)} />
+                                <FormField control={form.control} name='location' render={({ field }) => (
+                                    <FormItem>
+                                        <FormLabel>Location</FormLabel>
+                                        <FormControl>
+                                            <Input {...field} />
+                                        </FormControl>
+                                        <FormDescription>
+                                            This is your public display location.
+                                        </FormDescription>
+                                        <FormMessage />
+                                    </FormItem>)} />
+                                <FormField control={form.control} name='roles' render={() => (
+                                    <FormItem>
+                                        <FormLabel>Role</FormLabel>
+                                        <FormControl>
+                                            <Select>
+                                                <SelectTrigger className='w-[150px]'>
+                                                    <SelectValue placeholder="Role" />
+                                                </SelectTrigger>
+                                                <SelectContent>
+                                                    <SelectItem value="president">President</SelectItem>
+                                                    <SelectItem value="admin">Admin</SelectItem>
+                                                    <SelectItem value="user">User</SelectItem>
+                                                </SelectContent>
+                                            </Select>
+                                        </FormControl>
+                                        <FormDescription>
+                                            Only Verified user can be admin
+                                        </FormDescription>
+                                        <FormMessage />
+                                    </FormItem>)} />
+                                <Button>
+                                    Submit
+                                </Button>
+                            </form>
+                        </Form>
+                    </ScrollArea>
                 </SheetDescription>
             </SheetHeader>
         </SheetContent>
