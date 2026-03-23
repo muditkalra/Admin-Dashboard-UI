@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { cookies } from "next/headers";
+import { baseMetadata } from "@/utils/metadata";
 
 
 const geistSans = Geist({
@@ -18,10 +19,7 @@ const geistMono = Geist_Mono({
 	subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-	title: "Admin dashboard",
-	description: "Admin Dashboard UI created by Donald Trump",
-};
+export const metadata: Metadata = baseMetadata;
 
 export default async function RootLayout({
 	children,

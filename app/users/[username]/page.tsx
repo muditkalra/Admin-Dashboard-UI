@@ -28,7 +28,7 @@ export default function SingleUserPage() {
                     </BreadcrumbItem>
                 </BreadcrumbList>
             </Breadcrumb>
-            {/* containere */}
+            {/* container */}
 
             <div className="mt-4 flex flex-col xl:flex-row gap-8">
                 {/* left */}
@@ -128,7 +128,7 @@ export default function SingleUserPage() {
                             </div>
                             <div className="flex gap-2 items-center">
                                 <span className='font-bold'>Role:</span><span>
-                                    <Badge className='bg-gradient-to-br from-blue-600 via-slate-100 to-red-600 py-2 px-4'>
+                                    <Badge className='bg-linear-to-br from-blue-600 via-slate-100 to-red-600 py-2 px-4'>
                                         President
                                     </Badge>
                                 </span>
